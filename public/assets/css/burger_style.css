@@ -1,0 +1,21 @@
+.jumbotron {
+    font-family: 'Lemonada', cursive;
+}
+
+.fas:hover {
+    cursor: pointer;
+    transition: .5s;
+    color: #4aaaa5;
+}
+
+.mb-2 {
+    margin-left: 20px;
+}
+
+#formContainer {
+    margin-top: 20px;
+}
+
+#inputBurger {
+    width: 50%;
+}

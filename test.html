@@ -20,9 +20,26 @@
             </div>
         </div>
 
-        {{{ body }}}
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="input-group flex-nowrap">
+                        <input type="text" class="form-control" placeholder="Test Burger Four"  aria-describedby="addon-wrapping" readonly>
+                        <div class="input-group-append">
+                            <button type="submit" class="btn btn-info">Devour It!</button>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="container text-center">
+                <div class="col-6">
+                    <input class="form-control" type="text" placeholder="Test Burger One" readonly>
+                    <input class="form-control" type="text" placeholder="Test Burger Two" readonly>
+                    <input class="form-control" type="text" placeholder="Test Burger Three" readonly>
+                </div>
+            </div>
+        </div>
+
+        <div class="container text-center" id="formContainer">
             <form>
                 <div class="form-group">
                 <input id="inputBurger">
