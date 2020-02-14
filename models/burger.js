@@ -21,5 +21,3 @@ const burger = {
 };
 
 module.exports = burger;
-
-// Don't forget to export

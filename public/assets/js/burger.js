@@ -1,10 +1,11 @@
 $(function() {
     // Click event for devouring a burger
     $(".devourBtn").on("click", event => {
-        let id = $(this).data("id");
+        let id = $(this).data("id"); // "this" is referring to the window object...
+        console.log(id);
 
         $.ajax("/api/burger/" + id, {
-            type: "PUT",
+            type: "PUT"
 
         }).then(function() {
             console.log("You have devoured a burger.");
@@ -13,7 +14,7 @@ $(function() {
     });
 
     // Click event for adding a burger
-    $(".newBurger").on("submit", event => {
+    $(".newBurger").on("click", event => {
         event.preventDefault();
 
         let newBurger = {

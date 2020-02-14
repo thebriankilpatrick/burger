@@ -3,10 +3,10 @@
         <div class="col-6">
             {{#each burgers}}
             {{#unless devoured}}
-            <div class="input-group flex-nowrap">
+            <div class="input-group flex-nowrap" data-id="{{id}}">
                 <input type="text" class="form-control" placeholder="{{burger_name}}" data-id="{{id}}" aria-describedby="addon-wrapping" readonly>
                 <div class="input-group-append">
-                    <button type="submit" class="btn btn-info devourBtn">Devour It!</button>
+                    <button type="submit" class="btn btn-info devourBtn" data-id="{{id}}">Devour It!</button>
                 </div>
             </div>
             {{/unless}}
