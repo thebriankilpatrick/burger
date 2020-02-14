@@ -64,10 +64,12 @@ const orm = {
         queryString += condition;
 
         connection.query(queryString, (err, result) => {
+            console.log(queryString);
             if (err) throw err;
             cb(result);
         });
     }
 };
+
 
 module.exports = orm;

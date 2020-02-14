@@ -1,8 +1,7 @@
 $(function() {
     // Click event for devouring a burger
     $(".devourBtn").on("click", event => {
-        let id = $(this).data("id"); // "this" is referring to the window object...
-        console.log(id);
+        const id = event.target.id; 
 
         $.ajax("/api/burger/" + id, {
             type: "PUT"
