@@ -23,7 +23,7 @@ router.post("/api/burger", (req, res) => {
 });
 
 router.put("/api/burger/:id", (req, res) => {
-    let condition = "id = " + req.params.id; // This sets condition = "id = undefined"
+    let condition = "id = " + req.params.id; 
 
     burger.updateOne({
         devoured: true
